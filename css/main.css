@@ -25,7 +25,7 @@ img {
 /* Background gradient */
 .wrapper {
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(74, 40, 0, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(34, 18, 0) 100%);
 }
 
 /* Container with max width */
@@ -40,7 +40,8 @@ header {
     padding: 50px 0;
 }
 
-header .logo {
+header .logo,
+footer .blocks .logo {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 20px;
@@ -84,14 +85,16 @@ header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid #DC7000;
 }
 
-header nav ul li.btn a {
+header nav ul li.btn a,
+.contact-us .contact-box button {
     background: #FA9021;
     padding: 9px 17px;
     border-radius: 5px;
     transition: all 500ms ease;
 }
 
-header nav ul li.btn a:hover {
+header nav ul li.btn a:hover,
+.contact-us .contact-box button:hover {
     background: #a02604;
 }
 
@@ -160,7 +163,8 @@ header nav ul li.btn a:hover {
     font-size: 30px;
 }
 
-.trending .see-all {
+.trending .see-all,
+.projects .see-all {
     color: #fff;
     background: #25211D;
     border-radius: 5px;
@@ -170,7 +174,10 @@ header nav ul li.btn a:hover {
     transition: all 500ms ease;
 }
 
-.trending .see-all:hover {
+
+
+.trending .see-all:hover,
+.projects .see-all:hover {
     transform: scale(1.1);
 }
 
@@ -223,4 +230,210 @@ header nav ul li.btn a:hover {
 .banner img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+/* Images Section */
+
+.features {
+    background: url(/img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.features h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+.features p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 170%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    margin-bottom: 30px;
+
+    max-width: 800px;
+
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+
+}
+
+.features .info .block img {
+    margin-bottom: 15px;
+}
+
+/* Projects Section */
+
+.projects {
+    padding: 100px 0;
+
+}
+
+.projects h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 40px 0;
+    text-align: center;
+
+}
+
+.projects .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 26px 0;
+}
+
+.projects img {
+    margin: 0 13px;
+}
+
+.projects .see-all {
+    float: none;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ContactUs Section  */
+
+.contact-us {
+    padding-bottom: 120px;
+}
+
+.contact-us h3 {
+    font-weight: 600;
+    font-size: 30px;
+
+
+}
+
+.contact-us p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 74px 0;
+
+
+
+}
+
+.contact-us .contact-box {
+    width: 94%;
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-us .contact-box h4 {
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.contact-us .contact-box p {
+    width: 500px;
+
+}
+
+.contact-us .contact-box input {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -100px;
+    z-index: 1;
+    padding-right: 100px;
+}
+
+.contact-us .contact-box input::placeholder {
+    columns: #898989;
+}
+
+.contact-us .contact-box button {
+    cursor: pointer;
+    z-index: 2;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    color: #fff;
+}
+
+/* Footer Section */
+footer {
+    background: #000000;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocs p {
+    width: 300px;
+    margin: 15px 0;
+
+}
+
+.footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer>p {
+    text-align: center;
 }
