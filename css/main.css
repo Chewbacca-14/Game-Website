@@ -26,6 +26,7 @@ img {
 .wrapper {
     width: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(34, 18, 0) 100%);
+    overflow-x: hidden;
 }
 
 /* Container with max width */
@@ -131,7 +132,8 @@ header nav ul li.btn a:hover,
     margin: 30px 0;
 }
 
-.hero--info .btn {
+.hero--info .btn,
+.hero-about .info .btn {
     background: #FA8305;
     padding: 19px 30px;
     border-radius: 50px;
@@ -141,7 +143,8 @@ header nav ul li.btn a:hover,
     font-size: 17px;
 }
 
-.hero--info .btn:hover {
+.hero--info .btn:hover,
+.hero-about .info .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -436,4 +439,162 @@ footer hr {
 
 footer>p {
     text-align: center;
+}
+
+/* ABOUT US PAGE */
+
+.hero-about {
+
+    position: relative;
+}
+
+.hero-about img {
+    position: absolute;
+    top: 0;
+    right: -45%;
+}
+
+.hero-about .info {
+    width: 500px;
+    padding: 250px 0;
+
+}
+
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info .btn {
+    margin-top: 20px;
+}
+
+.work {
+    padding: 80px 0;
+
+
+}
+
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1c140f;
+}
+
+.work .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.work .blocks .block .badge {
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.work .blocks .block .badge.purple {
+    background: #560f67;
+}
+
+.work .blocks .block .badge.brown {
+    background: #DC4200;
+}
+
+.work .blocks .block .badge.green {
+    background: #00DC8D;
+}
+
+/* NEW PAGE */
+
+.hero-news {
+    padding: 120px 0;
+    display: block;
+}
+
+.hero-news h2 {
+    font-size: 33px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero-news p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+
+.hero-news img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.bg {
+    background: url(/img/bg2.svg) no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg .title {
+    text-align: center;
+}
+
+.bg .title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.bg .title p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 30px;
+}
+
+.bg .form {
+    width: 100%;
+    max-width: 600px;
+    /* Adjust to your preferred width */
+    margin: 0 auto;
+}
+
+.bg .form .inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* Space between the two inputs */
+}
+
+.bg .form .inline>div {
+    width: 48%;
+    /* Ensure the two inputs fit comfortably side by side */
+}
+
+.bg input {
+    width: 100%;
+    /* Make sure the inputs take up full width of their containers */
+    background: #ffffff07;
+    border-radius: 9px;
+    border: 0.6px solid #CECECE;
+    padding: 18px;
+    outline: none;
+    box-sizing: border-box;
+    /* Ensure padding is included in width calculation */
 }
