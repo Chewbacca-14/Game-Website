@@ -571,7 +571,6 @@ footer>p {
 .bg .form {
     width: 100%;
     max-width: 600px;
-    /* Adjust to your preferred width */
     margin: 0 auto;
 }
 
@@ -579,22 +578,26 @@ footer>p {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    /* Space between the two inputs */
 }
 
 .bg .form .inline>div {
     width: 48%;
-    /* Ensure the two inputs fit comfortably side by side */
 }
 
 .bg input {
     width: 100%;
-    /* Make sure the inputs take up full width of their containers */
+    margin-bottom: 20px;
     background: #ffffff07;
     border-radius: 9px;
-    border: 0.6px solid #CECECE;
+    border: 0.6px solid #cecece93;
     padding: 18px;
     outline: none;
     box-sizing: border-box;
-    /* Ensure padding is included in width calculation */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.bg label {
+    color: #4F4F4F;
+    font-size: 14px;
 }
